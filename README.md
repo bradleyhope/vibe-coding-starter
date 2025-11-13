@@ -2,6 +2,15 @@
 
 A comprehensive template and workflow for starting vibe coding projects with Manus AI. This repository establishes a standard process where planning comes first, documentation is immutable, and execution follows a proven methodology.
 
+## Features
+
+- **Comprehensive Templates** - 6 fully-structured planning documents
+- **Automation Scripts** - One-command initialization, validation, and prompt generation
+- **Figma Integration** - Automatically import wireframes from Figma designs
+- **Extensive Documentation** - 35,000+ words of guides and best practices
+- **Research-Based** - Synthesizes insights from 17 sources
+- **Professional Workflow** - Immutable planning, version control, clear separation of concerns
+
 ## Philosophy
 
 Every vibe coding project should start with comprehensive planning in its own dedicated repository. The planning documents become the single source of truth and are not edited unless explicitly agreed upon. This approach ensures clarity, reduces iterations, and maximizes the effectiveness of AI-assisted development.
@@ -47,9 +56,11 @@ vibe-coding-starter/
 ├── scripts/                     # Automation scripts
 │   ├── init-project.sh         # Initialize new project
 │   ├── validate-docs.sh        # Validate planning docs
-│   └── generate-manus-prompt.sh # Auto-generate Manus prompt
+│   ├── generate-manus-prompt.sh # Auto-generate Manus prompt
+│   └── import-figma-wireframes.sh # Import from Figma (NEW!)
 ├── docs/                        # Documentation
 │   ├── BEST_PRACTICES.md       # Vibe coding best practices
+│   ├── FIGMA_INTEGRATION.md    # Figma integration guide (NEW!)
 │   ├── MANUS_GUIDE.md          # How to work with Manus
 │   └── TROUBLESHOOTING.md      # Common issues and solutions
 ├── examples/                    # Example projects
@@ -128,6 +139,7 @@ Use ChatGPT to help create each document:
    - Key screens and flows
    - User interactions
    - Visual hierarchy
+   - **NEW:** Import directly from Figma with `./scripts/import-figma-wireframes.sh`
 
 3. **Database Schema** (`planning/DATABASE_SCHEMA.md`)
    - Entities and relationships
@@ -258,6 +270,9 @@ Validates that all required planning documents are present and complete before e
 ### `generate-manus-prompt.sh`
 Automatically generates a comprehensive Manus prompt by combining all planning documents.
 
+### `import-figma-wireframes.sh` (NEW!)
+Imports wireframes directly from Figma files using the Figma REST API. See `docs/FIGMA_INTEGRATION.md` for setup guide.
+
 ## Best Practices
 
 ### Do's
@@ -293,6 +308,7 @@ Each example includes complete planning documents and the resulting code reposit
 
 - **WORKFLOW.md**: Detailed step-by-step workflow
 - **docs/BEST_PRACTICES.md**: Comprehensive vibe coding best practices
+- **docs/FIGMA_INTEGRATION.md**: Complete Figma integration guide (NEW!)
 - **docs/MANUS_GUIDE.md**: How to work effectively with Manus
 - **docs/TROUBLESHOOTING.md**: Common issues and solutions
 

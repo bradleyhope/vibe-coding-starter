@@ -75,9 +75,19 @@ For this project [paste PRD], recommend:
 
 Copy to `planning/TECHNICAL_SPEC.md`
 
-**Create wireframes** in Figma/Excalidraw and save to `planning/wireframes/`
+**Create wireframes:**
 
-**Document in** `planning/WIREFRAMES.md`
+**Option A: Import from Figma (Recommended)**
+```bash
+./scripts/import-figma-wireframes.sh
+```
+- Automatically imports all frames from Figma
+- See `docs/FIGMA_INTEGRATION.md` for setup
+
+**Option B: Manual**
+- Create in Figma/Excalidraw
+- Save screenshots to `planning/wireframes/`
+- Document in `planning/WIREFRAMES.md`
 
 **Fill out** `planning/SETUP_NOTES.md` with infrastructure details
 
